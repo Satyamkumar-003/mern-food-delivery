@@ -12,7 +12,7 @@ function Home() {
 
   // we maker funtion async because fetch (api ) wo hamar async function ha
   const loadData = async () => {
-    let response = await fetch("http://localhost:5000/api/foodData", {
+    let response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/foodData`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

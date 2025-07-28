@@ -12,7 +12,7 @@ router.post(
   "/createuser",
   [
     body("email", "Incorrect Email").isEmail(),
-    body("name").isLength({ min: 5 }),
+    // body("name").isLength({ min: 5 }),
     body("password", "Incorrect password").isLength({ min: 5 }),
   ],
   async (req, res) => {

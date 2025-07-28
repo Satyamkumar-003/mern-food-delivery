@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link ,useNavigate} from "react-router-dom";
+import Navbar from "../components/Navbar";
 function Login() {
   const [credentials, setCredentials] = useState({
     email: "",
@@ -47,6 +48,8 @@ function Login() {
 
   return (
     <div>
+      <Navbar />
+      <br /><br /><br /><br />
       <div>
         <div className="container mt-4">
           <h2>Login</h2>

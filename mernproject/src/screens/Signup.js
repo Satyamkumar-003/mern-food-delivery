@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import Navbar from '../components/Navbar';
 //these are the credentials define in the user
 function Signup() {
   const [credentials, setCredentials] = useState({
@@ -48,6 +48,8 @@ function Signup() {
 
   return (
     <>
+    <Navbar />
+    <br /><br /><br /><br />
       <div className="container mt-4">
         <h2>Sign Up</h2>
         <form onSubmit={handleSubmit}>
@@ -56,6 +58,7 @@ function Signup() {
             <input
               type="text"
               className="form-control"
+              placeholder='enter name '
               id="name"
               name="name"
               value={credentials.name}
@@ -69,6 +72,7 @@ function Signup() {
             <input
               type="email"
               className="form-control"
+              placeholder='enter vaild email'
               id="email"
               name="email"
               value={credentials.email}
@@ -82,6 +86,7 @@ function Signup() {
             <input
               type="password"
               className="form-control"
+              placeholder='password length must greater than 5'
               id="password"
               name="password"
               value={credentials.password}
@@ -95,6 +100,7 @@ function Signup() {
             <input
               type="text"
               className="form-control"
+              placeholder='address where to deliver'
               id="geolocation"
               name="geolocation"
               value={credentials.geolocation}

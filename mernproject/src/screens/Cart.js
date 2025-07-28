@@ -7,6 +7,7 @@ export default function Cart() {
   if (data.length === 0) {
     return (
       <div>
+        {/* <br /><br /><br /><br /><br /> */}
         <div className='m-5 w-100 text-center fs-3'>The Cart is Empty!</div>
       </div>
     )
@@ -42,9 +43,11 @@ export default function Cart() {
   let totalPrice = data.reduce((total, food) => total + food.price, 0)
   return (
     <div>
+      {/* <br /><br /><br /><br /><br /> */}
 
       {console.log(data)}
-      <div className='container m-auto mt-5 table-responsive  table-responsive-sm table-responsive-md' >
+      <div className='container m-auto push-down-from-navbar mt-5 pt-5 table-responsive  table-responsive-sm table-responsive-md' 
+      style={{ marginTop: '100px' }} >
         <table className='table table-hover '>
           <thead className=' text-success fs-4'>
             <tr>
@@ -72,12 +75,9 @@ export default function Cart() {
         </table>
         <div><h1 className='fs-2'>Total Price: {totalPrice}/-</h1></div>
         <div>
-          <button className='btn bg-success mt-5 ' onClick={handleCheckOut} > Check Out </button>
+          <button className='btn bg-success mt-5 ' onClick={handleCheckOut} > Place Order </button>
         </div>
       </div>
-
-
-
     </div>
   )
 }

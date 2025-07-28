@@ -3,13 +3,16 @@ import ReactDom from 'react-dom'
 
 const MODAL_STYLES = {
   position: 'fixed',
-  top: '50%',
+  top: '15%', // ✅ Changed from 50% to 10% to avoid overlapping navbar
   left: '50%',
-  backgroundColor: 'rgb(34,34,34)',
-  transform: 'translate(-50%, -50%)',
+  transform: 'translateX(-50%)', // ✅ Only horizontal centering now
+  backgroundColor: 'rgba(245, 245, 245, 1)',
   zIndex: 1000,
-  height: '90%',
-  width: '90%'
+  height: '80vh', // ✅ Use viewport height unit
+  width: '90%',
+  overflowY: 'auto', // ✅ Make modal content scrollable
+  borderRadius: '8px',
+  padding: '20px'
 }
 
 const OVERLAY_STYLES = {

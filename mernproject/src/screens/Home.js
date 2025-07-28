@@ -102,15 +102,17 @@ function Home() {
                     value={search} 
                     onChange={(e)=>{setSearch(e.target.value)}}
                   />
-                  <button className="btn btn-outline-dark" type="submit">
+                  {/* <button className="btn btn-outline-dark" type="submit">
                     Search
-                  </button>
+                  </button> */}
                 </form>
               </div>
             </nav>
           </div>
         </div>
       </div>
+
+      {/* now food card starts */}
       <div className="container">
         {foodCat !== []
           ? foodCat.map((data) => {

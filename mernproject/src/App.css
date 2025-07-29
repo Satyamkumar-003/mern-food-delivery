@@ -40,3 +40,37 @@
 .push-down-from-navbar {
   margin-top: 100px; /* or padding-top: 100px */
 }
+
+/* Custom styling for fixed navbar behavior */
+.custom-navbar {
+  z-index: 1050; /* Above default content */
+}
+
+body {
+  padding-top: 70px; /* Adjust based on your navbar height */
+}
+
+/* Ensure modals are above navbar */
+.modal {
+  z-index: 1060;
+}
+.modal-backdrop {
+  z-index: 1055;
+}
+
+/* Optional: Scroll inside mobile menu if it gets tall */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+}
+
+/* Make modal and backdrop stay above navbar */
+.modal {
+  z-index: 1080 !important;
+}
+
+.modal-backdrop {
+  z-index: 1070 !important;
+}

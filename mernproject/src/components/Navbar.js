@@ -14,7 +14,7 @@ function Navbar() {
   }
   return (
     <div>
-     <nav className="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+     <nav className="navbar navbar-expand-lg navbar-dark bg-danger fixed-top custom-navbar">
   <div className="container-fluid">
     <Link className="navbar-brand fs-1 fst-italic" to="/">Aahara</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

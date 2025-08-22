@@ -39,6 +39,9 @@ function Home() {
         <div className="spinner-border text-primary" role="status">
           <span className="visually-hidden">Loading...</span>
         </div>
+       <h4 className="text-muted">Fetching data from render and conneting to netlify</h4>
+        <br/>
+       <h3 className="text-muted">please refresh after 1 min<h3>
       </div>
     );
   }

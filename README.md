@@ -42,7 +42,7 @@ Edit
   "options": [
     { "half": "170", "full": "250" }
   ],
-  "description": "Made using Indian masalas and Basmati rice. Barbequed pieces of Paneer/Chicken/Mutton were added."
+  "description": "Made using Indian masalas and Basmati rice."
 }
 🍛 Collection: foodcategory
 json

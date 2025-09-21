@@ -1,4 +1,4 @@
-# 🍔 MERN Food Delivery App
+# 🍔 MERN Food Ordering App
 
 A full-stack food delivery application built using the **MERN stack** (MongoDB, Express.js, React, Node.js). Users can register, browse food items, add them to the cart, and place orders. Data is managed through MongoDB using Mongoose. This app supports authentication using JWT and secure password storage with Bcrypt.
 
